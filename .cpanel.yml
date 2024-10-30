@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/miubtqkc/public_html/bikcraft.layoutandmedia.com.br/wp-content/themes/Bikcraft
+    - /bin/cp -R ./Bikcraft/* $DEPLOYPATH/
