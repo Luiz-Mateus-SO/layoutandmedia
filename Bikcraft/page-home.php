@@ -48,7 +48,7 @@ get_header();
 
 	<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 		<li class="grid-1-3">
-			<a href="<?php the_permalink(); ?>"></a>
+			<a href="<?php the_permalink(); ?>">
 				<div class="produtos_icone">
 					<img src="<?php the_field('icone_produto'); ?>" alt="Bikcraft Passeio">
 				</div>
