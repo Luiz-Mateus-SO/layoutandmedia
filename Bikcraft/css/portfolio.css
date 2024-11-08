@@ -1,9 +1,9 @@
 .quote_link {
-	color: #000;
+	color: #000!important;
 }
 
 .quote_link:hover {
-	color: #260E22;
+	color: #260E22!important;
 }
 
 .quote_clientes {
