@@ -8,7 +8,7 @@
 }
 
 .blog-post:nth-of-type(odd) {
-	background: #FEC63E;
+	background: #20A5A4;
 }
 
 .blog-post a {
@@ -27,8 +27,8 @@
 }
 
 .blog-post a:hover {
-	color: #FEC63E;
-	background: #000;
+	color: #FFF;
+	background: #260E22;
 }
 
 .nav-blog {
@@ -47,6 +47,11 @@
 
 /*Blog Post*/
 
+section.introducao-blog {
+	height: 100%!important;
+	padding-bottom: 20px;
+}
+
 .introducao-geral {
 	background: #000;
 	height: 120px !important;
@@ -56,7 +61,29 @@
 	padding: 40px 0;
 }
 
+.conteudo-geral-container {
+	width: 100%;
+}
+
+
 .conteudo-geral p {
 	font-size: 18px;
 	line-height: 25px;
+}
+
+@media only screen and (max-width: 767px) {
+	section.introducao-blog .container h1 {
+		font-size: 30px;
+	}
+}
+
+
+.conteudo-geral-container h3 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.conteudo-geral-container ol li {
+	font-size: 18px;
+	font-weight: semi-bold;
 }

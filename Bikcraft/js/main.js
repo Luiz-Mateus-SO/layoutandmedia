@@ -16,6 +16,9 @@ Visibility.onVisible(function(){
 		$(".introducao h1").addClass("animated fadeInDown");
 	}, 400);
 	setTimeout(function () {
+		$(".wpp__btn").addClass("animated fadeInDown");
+	}, 400);
+	setTimeout(function () {
 		$(".introducao blockquote").addClass("animated fadeInDown");
 	}, 800);
 	setTimeout(function () {
@@ -39,7 +42,7 @@ Visibility.onVisible(function(){
 // Formulario
 
 $('.formphp').on('submit', function() {
-	var emailContato = "contato@bikcraft.com"; // Escreva aqui o seu e-mail
+	var emailContato = "contato@layoutandmedia.com.br"; // Escreva aqui o seu e-mail
 
 	var that = $(this),
 			url = that.attr('action'),

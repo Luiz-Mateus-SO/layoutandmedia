@@ -1,6 +1,27 @@
 <?php $contato = get_page_by_title('contato'); ?>
 
 <style type="text/css">
+.wpp__btn {
+	position: fixed;
+	bottom: 20px;
+	right: 24px;
+}
+
+.wpp__btn .wpp__link {
+	transition: .2s transform ease-in-out;
+	z-index: 999;
+}
+
+.wpp__btn .wpp__link:hover {
+	transform: scale(1.2);
+}
+
+
+.wpp__btn img {
+	max-width: 38px;
+	width: 100%;
+}
+
 .quebra {
 	background: url("<?php the_field('background_footer', $contato); ?>") no-repeat center;
 	background-size: cover;
@@ -26,7 +47,7 @@
 					<div class="grid-4 footer_contato">
 						<h3>Contato</h3>
 						<ul>
-							<li>- <?php the_field('telefone', $contato); ?></li>
+							<li>- <a href="https://api.whatsapp.com/send?phone=5515991630344&text=Ol%C3%A1!%20Tudo%20bem%3F%20Gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AAs"><?php the_field('telefone', $contato); ?></li></a>
 							<li>- <?php the_field('email', $contato); ?></li>
 							<li>- <?php the_field('endereco1', $contato); ?></li>
 						</ul>
@@ -42,11 +63,15 @@
 
 			<div class="copy">
 				<div class="container">
-					<p class="grid-16"><?php bloginfo('name'); ?> <?php echo date('Y'); ?> - Alguns direitos reservados.</p>
+					<p class="grid-16"><?php bloginfo('name'); ?> <?php echo date('Y'); ?> © Todos os direitos reservados.</p>
 				</div>
 			</div>
-		</footer>
 
+		</footer>
+		
+		<div class="wpp__btn">
+			<a href="<?php the_field('wpp-link', $contato); ?>" class="wpp__link"><img src="<?php echo get_template_directory_uri(); ?>/img/whatsapp.webp" alt="Icone Whatsapp"></a>
+		</div>
 	<!-- JavaScript -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.11.2.min.js"><\/script>')</script>

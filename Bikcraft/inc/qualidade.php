@@ -2,7 +2,7 @@
 
 <section class="qualidade container">
 	<h2 class="subtitulo"><?php the_field('titulo_qualidade', $sobre); ?></h2>
-	<img src="<?php the_field('logo_bikcraft', $sobre); ?>" alt="Bikcraft">
+	<img src="<?php the_field('Logotipo', $sobre); ?>" alt="Layout & Media">
 	<ul class="qualidade_lista">
     <?php if(have_rows('item_qualidade', $sobre)) : while(have_rows('item_qualidade', $sobre)) : the_row(); ?>
 		<li class="grid-1-3">
@@ -15,7 +15,7 @@
   <?php if (!is_page('sobre')) { ?>
 	<div class="call">
 		<p><?php the_field('chamada_sobre', $sobre); ?></p>
-		<a href="<?php bloginfo('url'); ?>/sobre" class="btn btn-preto">Sobre</a>
+		<a href="/sobre" class="btn btn-preto">Sobre</a>
 	</div> 
   <?php } ?>
 </section>

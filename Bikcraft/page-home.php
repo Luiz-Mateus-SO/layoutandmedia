@@ -31,7 +31,7 @@ get_header();
 			<p><?php the_field('quote_introducao'); ?></p>
 			<cite><?php the_field('citacao_introducao'); ?></cite>
 		</blockquote>
-		<a href="<?php bloginfo('url'); ?>/produtos" class="btn">Orçamento</a>
+		<a href="/produtos" class="btn">Orçamento</a>
 	</div>
 </section>
 
@@ -41,7 +41,7 @@ get_header();
 	<?php
 	$args = array (
 		'post_type' => 'produtos',
-		'order'   => 'ASC'
+		'order'   => 'DSC'
 	);
 		$the_query = new WP_Query ( $args );
 	?>
@@ -50,7 +50,7 @@ get_header();
 		<li class="grid-1-3">
 			<a href="<?php the_permalink(); ?>">
 				<div class="produtos_icone">
-					<img src="<?php the_field('icone_produto'); ?>" alt="Bikcraft Passeio">
+					<img src="<?php the_field('icone_produto'); ?>" alt="layout & Media produto">
 				</div>
 				<h3><?php the_title(); ?></h3>
 				<p><?php the_field('resumo_produto'); ?></p>
@@ -62,7 +62,7 @@ get_header();
 
 	<div class="call">
 		<p><?php the_field('chamada_produtos'); ?></p>
-		<a href="<?php bloginfo('url'); ?>/produtos/" class="btn btn-preto">Produtos</a>
+		<a href="/produtos/" class="btn btn-preto">Produtos</a>
 	</div>
 
 </section>

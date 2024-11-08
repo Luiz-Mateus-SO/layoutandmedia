@@ -16,7 +16,7 @@ get_header();
 			</div>
 
 			<div class="grid-16 foto-equipe">
-				<img src="<?php the_field('imagem_equipe'); ?>" alt="Equipe Bikcraft">
+				<img src="<?php the_field('imagem_equipe'); ?>" alt="Equipe Layout & Media">
 			</div>
 
 		</section>

@@ -3,14 +3,14 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <article>
-	<section class="introducao-interna introducao-geral">
+	<section class="introducao-interna introducao-geral introducao-blog">
 		<div class="container">
 			<h1><?php the_title(); ?></h1>
 		</div>
 	</section>
 
 	<section class="container conteudo-geral">
-		<div class="grid-8">
+		<div class="grid-8 conteudo-geral-container">
 			<?php the_content(); ?>
 		</div>
 	</section>

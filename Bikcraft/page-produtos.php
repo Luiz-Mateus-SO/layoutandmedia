@@ -8,7 +8,7 @@ get_header();
 	<?php
 	$args = array (
 		'post_type' => 'produtos',
-		'order'   => 'ASC'
+		'order'   => 'DSC'
 	);
 		$the_query = new WP_Query ( $args );
 	?>
@@ -17,7 +17,7 @@ get_header();
 		<section class="container produto_item animar-interno">
 			<a href="<?php the_permalink(); ?>">
 				<div class="grid-11">
-					<img src="<?php the_field('foto_produto1'); ?>" alt="Bikcraft <?php the_title(); ?>">
+					<img src="<?php the_field('foto_produto1'); ?>" alt="L&M <?php the_title(); ?>">
 					<h2><?php the_title(); ?></h2>
 				</div>
 				<div class="grid-5 produto_icone"><img src="<?php the_field('icone_produto'); ?>" alt="Icone <?php the_title(); ?>"></div>

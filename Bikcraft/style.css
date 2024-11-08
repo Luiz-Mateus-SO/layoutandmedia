@@ -28,6 +28,7 @@ Version: 1.0
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
 }
 
 p {
@@ -61,9 +62,9 @@ img {
 }
 
 .btn {
-	border: 3px solid #fec63e;
+	border: 3px solid #20A5A4;
 	padding: 10px 30px;
-	color: #fec63e;
+	color: #20A5A4;
 	font-size: 14px;
 	line-height: 20px;
 	text-transform: uppercase;
@@ -75,11 +76,13 @@ img {
 .btn:hover {
 	color: #fff;
 	border-color: #fff;
+	background: #260E22;
 }
 
 .btn.btn-preto:hover {
-	color: #000;
-	border-color: #000;
+	color: #260E22;
+	border-color: #260E22;
+	background: transparent;
 }
 
 .subtitulo {
@@ -87,7 +90,7 @@ img {
 	line-height: 30px;
 	font-weight: bold;
 	letter-spacing: .1em;
-	color: #000;
+	color: #260E22;
 	text-transform: uppercase;
 	text-align: center;
 	margin-bottom: 40px;
@@ -98,7 +101,7 @@ img {
 	display: block;
 	width: 60px;
 	height: 3px;
-	background: #000;
+	background: #260E22;
 	margin: 8px auto;
 }
 
@@ -124,12 +127,22 @@ img {
 /* Header */
 
 .header {
+	display: flex;
+	justify-content: space-between;
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background: #fec63e; /* Amarelo */
-	padding: 15px 0;
+	background: linear-gradient(to right, #260E22 0%, #5A114E 50%, #260E22 100%);
 	z-index: 10;
+}
+
+.header .container {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	justify-content: space-between;
+	width: 100%;
+	margin: 0;
 }
 
 .header_menu {
@@ -139,11 +152,10 @@ img {
 .header_menu ul li {
 	display: inline-block;
 	margin-left: 25px;
-	margin-top: 20px;
 }
 
 .header_menu ul li a {
-	color: #000;
+	color: #FFF;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: .1em;
@@ -154,23 +166,29 @@ img {
 }
 
 .header_menu ul li a:hover {
-	color: #FFF;
+	color: #20A5A4;
 }
 
 .header_menu ul li a.menu_ativo {
-	color: #FFF;
+	color: #20A5A4;
 }
 
 .header_menu ul li.current_page_item a {
-	color: #FFF;
+	color: #20A5A4;
 }
 
+header .container a img {
+	width: 142px;
+	padding: 8px;
+}
 /* Introdução */
 
 .introducao {
 	width: 100%;
 	height: 380px;
-	background-size: cover;
+	background-size: cover!important;
+	background-attachment: fixed!important;
+	background-position: center!important;
 	margin-top: 92px;
 	text-align: center;
 	padding-top: 80px;
@@ -181,6 +199,10 @@ img {
 	color: #FFF;
 	font-weight: bold;
 	text-transform: uppercase;
+}
+
+.introducao .quote-externo {
+	max-width: 440px;
 }
 
 .quote-externo {
@@ -244,8 +266,9 @@ img {
 }
 
 .produtos_lista li{
-	background: #fec63e;
+	background: #260E22;
 	text-align: center;
+	border-radius: 20px;
 }
 
 .produtos_lista li img {
@@ -263,6 +286,7 @@ img {
 	text-transform: uppercase;
 	letter-spacing: .1em;
 	margin-top: 20px;
+	color: white;
 }
 
 .produtos_lista li h3:after{
@@ -270,17 +294,20 @@ img {
 	display: block;
 	width: 60px;
 	height: 3px;
-	background: #000;
+	background: #20A5A4;
 	margin: 2px auto;
 }
 
 .produtos_lista li p {
 	padding: 10px 20px 20px 20px;
+	color: white;
 }
 
 .produtos_icone {
-	background: #000;
+	background: #FFF;
 	padding: 20px;
+	border-radius: 20px 20px 0 0;
+	border: 4px solid #260E22;
 }
 
 .call {
@@ -302,11 +329,11 @@ img {
 }
 
 .portfolio .subtitulo {
-	color: #fec63e;
+	color: #20A5A4;
 }
 
 .portfolio .subtitulo:after {
-	background: #fec63e;
+	background: #20A5A4;
 }
 
 .portfolio_lista div:last-of-type {
@@ -356,6 +383,7 @@ img {
 	text-transform: uppercase;
 	letter-spacing: .1em;
 	margin-top: 20px;
+	color: #260E22;
 }
 
 .qualidade_lista li h3:after{
@@ -363,7 +391,7 @@ img {
 	display: block;
 	width: 60px;
 	height: 3px;
-	background: #000;
+	background: #260E22;
 	margin: 6px auto;
 }
 
@@ -396,7 +424,7 @@ img {
 .footer h3 {
 	font-size: 18px;
 	line-height: 25px;
-	color: #fec63e;
+	color: #20A5A4;
 	text-transform: uppercase;
 	letter-spacing: .1em;
 	font-weight: bold;
@@ -407,12 +435,20 @@ img {
 	display: block;
 	width: 60px;
 	height: 3px;
-	background: #fec63e;
+	background: #20A5A4;
 	margin: 6px 0 12px 0;
 }
 
 .footer_historia {
 	padding-right: 40px;
+}
+
+.footer_contato a {
+	color: white;
+}
+
+.footer_contato a:hover {
+	color: #20A5A4;
 }
 
 .footer_contato ul li {
@@ -427,7 +463,7 @@ img {
 }
 
 .footer_redes ul li a {
-	border: 3px solid #fec63e;
+	border: 3px solid #20A5A4;
 	display: block;
 	padding: 10px;
 	transition: all .5s ease;
@@ -439,8 +475,12 @@ img {
 
 .copy {
 	width: 100%;
-	background: #fec63e;
+	background: linear-gradient(to right, #260E22 0%, #5A114E 50%, #260E22 100%);
 	padding: 20px 0;
+}
+
+.copy p {
+	color: #FFF;
 }
 
 /*Animações*/
@@ -545,18 +585,34 @@ img {
 	/*Estilo para smartphone*/
 	@media only screen and (max-width: 767px) {
 	
+	.customize-support .header {
+		margin-top: 0;
+	}
+
+	.produto_info {
+		border-radius: 20px 20px 0 0!important;
+	}
+
 	/*Header*/
 	.header {
 		position: relative;
 		padding-bottom: 0px;
 	}
 	
+	header .container a img {
+		padding: 8px 0 0 0;
+	}
+
 	.header img {
-		margin: 0 auto 10px auto;
+		margin: 0 auto 0px auto;
 	}
 	
 	.header_menu {
 		text-align: center;
+	}
+
+	.header .container {
+		flex-direction: column;
 	}
 	
 	.header_menu ul li {
@@ -564,14 +620,14 @@ img {
 	}
 	
 	.header_menu ul li a {
-		border: 4px solid #000;
+		border: 4px solid #FFF;
 		width: 136px;
 		display: block;
 		float: left;
 	}
-	
+
 	.header_menu ul li a:hover {
-		border-color: #fff;
+		border-color: #20A5A4;
 	}
 	
 	.header_menu ul li a.menu_ativo {
@@ -628,8 +684,17 @@ img {
 		margin-bottom: -68px;
 	}
 	
+	section.container.produto_item {
+		padding-top: 60px;
+	}
+	 
+
 	.produto_icone {
 		padding: 41px 0;
+	}
+
+	.produto_info {
+		margin-top: 20px;
 	}
 	
 	.produto_info p{
@@ -661,5 +726,36 @@ img {
 		padding-right: 0px;
 		margin-bottom: 40px;
 	}
+
+	.customize-support {
+		padding-top: 44px;
+	}
 	
+	div.rslides_portfolio_produtos {
+		margin: 0;
+	}
 	} /* Final do estilo para smartphone */
+
+.rslides_portfolio_produtos  {
+	margin: 0 10px;
+	max-width: 460px;
+	border-radius: 20px;
+}
+
+html.js.touch {
+	margin: 0!important;
+}
+
+.site-portfolio__item {
+	border-radius: 20px;
+}
+
+.site-portfolio__link img {
+	transition: .2s all ease-in-out;
+	border-radius: 20px;
+}
+
+.site-portfolio__link img:hover {
+	transition: .2s all ease-in-out;
+	transform: scale(1.125);
+}

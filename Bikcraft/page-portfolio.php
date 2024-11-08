@@ -8,10 +8,12 @@ get_header();
 			<ul class="rslides">
 				<?php if(have_rows('quote_portfolio')) : while(have_rows('quote_portfolio')) : the_row(); ?>
 				<li>
-					<blockquote class="quote_clientes">
-						<?php the_sub_field('quote'); ?>
-						<cite><?php the_sub_field('nome_quote'); ?></cite>
-					</blockquote>
+					<a href="<?php the_sub_field('quote_link'); ?>" class="quote_link" style='color: #000'>
+						<blockquote class="quote_clientes">
+							<?php the_sub_field('quote'); ?>
+							<cite><?php the_sub_field('nome_quote'); ?></cite>
+						</blockquote>
+					</a>
 				</li>
 				<?php endwhile; else: endif; ?>
 			</ul>
