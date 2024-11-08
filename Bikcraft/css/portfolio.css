@@ -1,8 +1,20 @@
+.quote_link {
+	color: #000;
+}
+
+.quote_link:hover {
+	color: #260E22;
+}
 
 .quote_clientes {
 	padding: 60px 0;
 	max-width: 460px;
 	margin: 0 auto;
+	color: #000;
+}
+
+.quote_clientes:hover {
+	color: #260E22;
 }
 
 .quote_clientes p{
