@@ -2,7 +2,7 @@
 	color: #000;
 }
 
-.quote_link:hover {
+.quote_link p:hover {
 	color: #20A5A4;
 }
 
