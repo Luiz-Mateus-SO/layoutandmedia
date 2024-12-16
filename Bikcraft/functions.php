@@ -1,5 +1,4 @@
 <?php 
-
   function theme_scripts() {
     wp_register_script('modernizr', get_template_directory_uri() . '/js/libs/modernizr.custom.45655.js', [], false, true);
     wp_register_script('plugins', get_template_directory_uri() . '/js/plugins.js', [], false, true);
@@ -80,4 +79,3 @@
   add_action('init', 'custom_post_type_produtos');
   
 ?>
-
