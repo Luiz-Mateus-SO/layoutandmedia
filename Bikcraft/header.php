@@ -28,10 +28,12 @@
 				<nav class="grid-12 header_menu">
 					<?php
 						$args = array(
-							'menu' => 'principal',
-							'theme_location' => 'menu-principal',
-							'container' => false
-						);
+							'menu'            => 'principal',       // Nome do menu no WordPress
+							'theme_location'  => 'menu-principal',  // Local do menu registrado no functions.php
+							'container'       => false,             // Sem contêiner HTML ao redor do menu
+							'menu_class'      => 'menu-list',       // Classe CSS opcional para os itens do menu
+							'fallback_cb'     => false              // Remove o menu padrão caso não haja menu associado
+					);
 						wp_nav_menu( $args );
 					?>
 				</nav>
